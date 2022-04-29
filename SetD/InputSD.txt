@@ -1,0 +1,14 @@
+MuhammadFaris	KualaLumpur	CASE1
+AhmadAdam	KotaBahru	CASE2
+TanChinLam	Kuching		CASE3
+PeterLim	Penang          CASE4       	 
+MariaHamid 	KualaLumpur	CASE4                 
+AlexanderAlex	Penang          CASE3   
+SitiFatimah	Kuching         CASE1  	 
+KumaranKumar	KualaLumpur	CASE4              	
+NajwaHalim	Kuching         CASE2
+SamuelSam  	Penang          CASE2
+FaridOsman	KualaLumpur	CASE4
+NurulIman	KotaBahru       CASE3
+FarahAli	Penang	        CASE1
+HassanHussin	KualaLumpur    	CASE2

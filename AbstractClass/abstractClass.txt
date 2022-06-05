@@ -1,0 +1,27 @@
+Abstract class is a class with one or more abstract methods.
+Abstract method is a method signature without implementation.
+Abstract class cannot be instantiated and should be extended and implemented in subclasses.
+ex: A a = new A(); //is wrong!!
+Ex:
+public abstract class GeometricObject{
+    private String color = 'white';
+    private boolean filled;
+    private java.util.Date dateCreated;
+
+    protected GeometricObject() {
+        dateCreated = new java.util.Date();
+    }
+    public abstract double getArea();
+    public abstract double getPerimeter();
+}
+public class Rectangle extends GeometricObject{
+    public double getArea() {return width*height;}
+    public double getPerimeter() {return 2*(width+height);}
+}
+**An abstract method cannot be contained in a non-abstract class.
+**An abstract class cannot be instantiated but can declare constructor in its subclasses.
+**A subclass can be abstract even if its superclass is concrete.
+**Can crete array due to abstract class can be used as a data type.
+GeometricObject[] geo = new GeometricObject[10];// THIS IS CORRECT
+geo[0] = new Circle();
+geo[1] = new Rectangle();

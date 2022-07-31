@@ -1,0 +1,23 @@
+try{
+throw new Exception("This is an error")
+}catch(Exception ex){
+System.out.println(ex.getMessage());
+}
+
+By using function:
+void readInput() throws Exception{
+    try {
+
+    }catch(ArithmeticException a){
+
+    }
+    //if the error is not regrading with the arithmeticException then Exception object will be thrown to the caller.
+}
+
+void getInput(){
+    try {
+        readInput();
+    }catch(Exception e){
+        System.out.println("The error comes from readInput() function!!");
+    }
+}

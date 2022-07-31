@@ -1,8 +1,8 @@
-using implemments to extend a parent class 
-all variables must be public static final 
+**using implemments to extend a parent class**
+all variables by default are public static final 
 No constructors.
 An interface cannot be instantiated using the new operator.
-All methods must be public abstract instance methods. 
+All methods by default are public abstract instance methods. 
 ex:
 public interface InterfaceName{
     constant declaration;->public static final
@@ -12,14 +12,14 @@ public interface InterfaceName{
 EX:
 public interface Conversionfactors {
     //all are constants
-    double inToMm =25.3; 
+    public final double inToMm =25.3; 
     public final int aConstant =32;
-    double ounToGram = 28.34952;
+    public final double ounToGram = 28.34952;
     public double inToMm();//no nid to include abstract
 
 EX2:
 public interface Speakable{
- public String speak();
+ public abstract String speak();
 }
 public class Cat extends Animal implements Speakable{
     public Cat(){kind="cat";}

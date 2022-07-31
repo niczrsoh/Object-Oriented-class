@@ -1,6 +1,7 @@
 package Vector;
 import java.util.Scanner;
 import java.util.Vector;
+//addElement() , insertElementAt() , removeElement(), removeElementAt(), elementAt()
 class Course{
     private String name;
     private String code;

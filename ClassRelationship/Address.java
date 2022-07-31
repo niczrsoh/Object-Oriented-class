@@ -1,4 +1,3 @@
-package ClassRelationship;
 
 public class Address {
     private String street;

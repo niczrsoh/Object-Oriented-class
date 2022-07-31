@@ -1,4 +1,3 @@
-package ClassRelationship;
 
 import java.util.*;
 public class Customer{
@@ -8,12 +7,15 @@ public class Customer{
     private Vector<Pizza>pizzaList;
     private final double DELIVERY_CHARGE=5;
     
+    //Customer compose with Name 
+    //Customer associate with pizza  
+    //Customer aggregate with address
     public Customer(String p, String fn, String ln, Address a)
     {
         paymentMode=p;
-        name=new Name(fn, ln);
-        add=a;
-        pizzaList=new Vector <Pizza>();
+        name=new Name(fn, ln);//composition
+        add=a;//aggregation
+        pizzaList=new Vector <Pizza>();//association
     }
 
     public void order(Pizza p)

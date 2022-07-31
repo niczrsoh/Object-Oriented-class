@@ -1,8 +1,7 @@
-package ClassRelationship;
- 
 public class Pizza{
-    private String description;
+        private String description;
     private Size saiz;
+    //Pizza compose with the Size
     Pizza(String description, Size saiz){
         this.description= description;
         this.saiz = saiz;

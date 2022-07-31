@@ -6,6 +6,7 @@ public class Square extends Rectangle{
     double height;
     public Square(){
         super(10, 15);
+        System.out.println("Derived class");
         height= 10;
     }
     public double calculateVolume(){

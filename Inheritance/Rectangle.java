@@ -7,6 +7,7 @@ public class Rectangle {
     Rectangle(double _w, double _l){
         width = _w;
         length = _l;
+        System.out.println("Base class");
     }
     protected double calculateArea(){
         return width * length;

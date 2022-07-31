@@ -9,7 +9,9 @@ String name;
 }
 class Circle extends Shape{
     protected double radius;
+   
     Circle(double radius,String name){
+         //implicit call superclass
         this.name = name;
         this.radius = radius;
     }
@@ -22,6 +24,10 @@ class Rectangle extends Shape{
         this.name = name;
         this.length = length;
         this.width= width;
+    }
+    //The this() method is used to invoke another constructor of the same class!! 
+    Rectangle(){
+        this(12.0,14.0,"Rectangle");
     }
     double calcArea(){return width*length;}
 }
@@ -38,7 +44,7 @@ class Triangle extends Shape{
 class Cone extends Circle{
     double height;
     Cone(double radius, double height,String name) {
-        super(radius,name);
+        super(radius,name);//using super keyword to invoke superclass explicitly
         this.height = height;
     }
     double calcArea(){
